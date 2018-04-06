@@ -5,8 +5,16 @@ html {
   -webkit-text-size-adjust: 100%;
 }
 
-.caption1 {
+.caption {
     overflow-wrap: break-word;
+    white-space:normal !important;
+    text-align:left;
+}
+
+#slider-thumbs {
+  white-space: nowrap;
+  overflow-wrap: white;
+  overflow-y:scroll;
 }
 
 #myCarousel {
@@ -205,6 +213,28 @@ list-style:none;
     text-align: center;
     margin-left: 90px !important;
   }
+
+  .heading {
+    font-size:3em;
+  }
+
+  .bodyText {
+    margin-top:0px;
+  }
+
+  .mainPageCon {
+    padding-top: 0px !important;
+  }
+
+  #slider-thumbs {
+    white-space: nowrap;
+    overflow-wrap: white;
+    overflow-y:scroll;
+    height:975px;
+}
+.bodyText {
+font-size:2em;
+}
    }
   
 /* Small devices (landscape phones, 576px and up) */
@@ -237,6 +267,16 @@ list-style:none;
     text-align: center;
     margin-left: 200px !important;
   }
+
+  #slider-thumbs {
+    white-space: nowrap;
+    overflow-wrap: white;
+    overflow-y:scroll;
+    height:975px;
+}
+.bodyText {
+font-size:2em;
+}
    }
   
 /* Medium devices (tablets, 768px and up) */
@@ -263,16 +303,19 @@ list-style:none;
     margin-left: 275px !important;
   }
   #slider-thumbs {
-              white-space: nowrap;
-              overflow-wrap: white;
-              overflow-y:scroll;
-              height:1500px;
-          }
+    white-space: nowrap;
+    overflow-wrap: white;
+    overflow-y:scroll;
+    height:975px;
+}
+.bodyText {
+font-size:2em;
+}
  
 }
   
 /* Large devices (desktops, 992px and up) */
-  @media (min-width: 992px) and (max-width: 1199.98px) { 
+  @media (min-width: 992px) and (max-width: 1280.98px) { 
     #mobileView {
         display: none;
       }
@@ -293,17 +336,20 @@ list-style:none;
       .navbar {
           display:none;
       }
-	  #slider-thumbs {
-              white-space: nowrap;
-              overflow-wrap: white;
-              overflow-y:scroll;
-              height:900px;
-          }
+      #slider-thumbs {
+        white-space: nowrap;
+        overflow-wrap: white;
+        overflow-y:scroll;
+        height:975px;
+    }
+    .bodyText {
+    font-size:2em;
+    }
 
 }
   
 /* Extra large devices (large desktops, 1200px and up) */
-  @media (min-width: 1200px) {  
+  @media (min-width: 1281px) {  
     #mobileView {
     display: none;
   }
@@ -329,6 +375,9 @@ list-style:none;
               overflow-wrap: white;
               overflow-y:scroll;
               height:1100px;
+          }
+  .bodyText {
+    font-size:3em;
           }
 }
 
@@ -407,10 +456,6 @@ header {
 
   
 }
-
-@media (max-width: 768px) {
-   
-  }
 
 
 @media (min-width: 768px) {
